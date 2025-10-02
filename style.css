@@ -141,15 +141,24 @@ nav{
 .grid img{
     width: 300px;
     height: 300px;
-
+    border-radius: 30px;
 }
 
 .grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin: 50px;
+display: grid;
+gap: 20px;
+margin: 50px;
+grid-template-columns: repeat(2, 1fr);
 
+}
+img:hover{
+transform: scale(1.05);    
+transition: 0.2s ease-in-out;
+box-shadow: 5px 5px 5px rgba(87, 2, 87, 0.323);
+}
+
+.item1{
+  
 }
 
 
@@ -179,4 +188,14 @@ nav{
     .hero_content{
         margin-top: -30px;
     }
+    .feafures{
+        flex-direction: column;
+    }
+    .grid img{
+        width: 100%;
+        height: 100%;
+        margin: 50px;
+        
+    }
+    
 }
